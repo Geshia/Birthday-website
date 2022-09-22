@@ -93,6 +93,8 @@ wrongAns1.onclick = function () {
 
 var correctAns1_2 = document.querySelector(".correctAns1_2")
 var wrongAns1_2 = document.querySelector(".wrongAns1_2")
+var wrongAns1_3 = document.querySelector(".wrongAns1_3")
+var correctAns1_3 = document.querySelector(".wrongAns1_3")
 var game_bgcontainer3 = document.querySelector(".game_bgcontainer3")
 
 correctAns1_2.onclick = function () {
@@ -104,4 +106,16 @@ wrongAns1_2.onclick = function () {
 	alert(yourName + ' Your answer is wrong')
 	game_bgcontainer2.style.display = "none";
 	game_bgcontainer3.style.display = "flex";
+}
+
+
+correctAns1_3.onclick = function () {
+	alert(yourName + ' Your answer is correct')
+	game_bgcontainer3.style.display = "none";
+	// game_bgcontainer3.style.display = "flex";
+}
+wrongAns1_3.onclick = function () {
+	alert(yourName + ' Your answer is wrong')
+	game_bgcontainer3.style.display = "none";
+	// game_bgcontainer3.style.display = "flex";
 }
