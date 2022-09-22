@@ -16,7 +16,7 @@
         
         <div class="circle1">
             <div class="circle2">
-                <h1> Richard  </h1>
+                <h1>Richard</h1>
             </div>
         </div>
         <div class="ballon1">
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="box">
-        <h1>23rd September 2004</h1>
+        <h1>23rd September 2022</h1>
     </div>
     
     <!-- ========================================================Second_page================================================== -->
@@ -38,22 +38,39 @@
             <input class="submit" type="submit" />
         </div>
     </div>
-    <!-- ===============================================================Third_page=================================================== -->
-    <div class="intro_to_birthdayPresent row">
-        <div class="intro">
-            <p>Richard has two birthday present for you but you can only choose once and one out of them so choose wisely.</p>
-            <div class="submit3">Next</div>
+    <!-- ===============================================================Would you like to play richard's game=================================================== -->
+    <div class="would_u_bgcontainer">
+        <div class="would_u_bg">
+            <p class="would_u_txt">Would you like to play Richard's game</p>
+            <div class="would_u_like_to_play-Yes">Yes</div>
+            <div class="would_u_like_to_play-No">No</div>
         </div>
     </div>
-    <!-- ====================================================================fifth_class=============================================================== -->
-    <div class="gift_to_select row">
-        <div class="gift1">
-            <div class="gift_flip_front1">gift1</div>
-            <div class="gift_flip_back1">*555*020202020020</div>
+
+    <!-- ===================================================================richard's game================================================================================= -->
+
+    <div class="game_bgcontainer">
+        <div class="question_board">
+            <p><span class="auto-type"></span></p>
+            <div class="correctAns1">Letter B</div>
+            <div class="wrongAns1">Letter Y</div>
         </div>
-        <div class="gift2">
-            <div class="gift_flip_front2">gift1</div>
-            <div class="gift_flip_back2">*555*020202020020</div>
+    </div>
+
+
+    <div class="game_bgcontainer2">
+        <div class="question_board2">
+            <p>What is the full meaning of HTML</p>
+            <div class="wrongAns1_2">HYPER TEXT MAKE UP LANGUAGE</div>
+            <div class="correctAns1_2">HYPER TEXT MARK UP LANGUAGE</div>
+        </div>
+    </div>
+
+    <div class="game_bgcontainer3">
+        <div class="question_board3">
+            <p>How old is Richard</p>
+            <div class="wrongAns1_3">18 Years</div>
+            <div class="correctAns1_3">17 Years</div>
         </div>
     </div>
 
@@ -61,5 +78,14 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <script src="birthday.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed('.auto-type', {
+        strings: ["Which letter of the English alphabet flies, sings, and stings?"],
+        typeSpeed: 80,
+        backSpeed:9999999999999999999999,
+        loop: true,
+    })
+</script>
 </body>
 </html>

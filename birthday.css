@@ -175,46 +175,13 @@
     border:none;
     align-self: flex-end;
 }
-/* ========================================================================Fourth_page========================================================================== */
-.intro_to_birthdayPresent{
+/* ===============================================================Would you like to play richard's game===================================================
+ */
+.would_u_bgcontainer{
     justify-content: center;
     align-items: center;
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-.intro_to_birthdayPresent .intro{
-    width: 50%;
-    height: 50%;
-    background-color: #fefefe;
-    position:relative;
-    border: 1px solid #888;
-}
-.submit3{
-    position:absolute;
-    right:5%;
-    bottom:5%;
-    cursor: pointer;
-    background:#1F1F58;
-    padding:10px;
-    border-radius: 10px;
-    color:white;
-}
-/* =========================================================================fifth_class============================================================================== */
-.gift_to_select{
-    justify-content: center;
-    align-items: center;
-    gap:10%; 
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    display: none;
+    position: fixed;
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
@@ -222,72 +189,186 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */   
+    background-color: rgba(0,0,0,0.1);
 }
-.gift1,.gift2{
-    border:solid 1px black;
-    width:20%;
+.would_u_bgcontainer .would_u_bg{
+    width:50%;
     height:20%;
-    position: relative;
-    background-color: #fefefe;
-    border: 1px solid #888;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    background-color:#888;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
 }
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  }
-  
-@keyframes animatetop {
-from {top:-300px; opacity:0}
-to {top:0; opacity:1}
+.would_u_like_to_play-Yes{
+    position:absolute;
+    bottom: 10px;
+    right:30px;
+    background-color: red;
+    padding:10px;
+    border-radius: 5px;
 }
-
-
-.gift_flip_front1, .gift_flip_front2, .gift_flip_back2, .gift_flip_back1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    /* top:0;
-    left:0; */
+.would_u_like_to_play-No{
+    position:absolute;
+    bottom: 10px;
+    left:30px;
+    background-color: pink;
+    padding:10px;
+    border-radius: 5px;
+}
+/* ===============================================================Richard's game===================================================*/
+.game_bgcontainer{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6);
+}
+.question_board, .question_board2{
+    width:40%;
+    height: 30%;
+    background-color: white;
     display:flex;
     justify-content: center;
-    align-items: center;
-  }
-
-.gift_flip_back1, .gift_flip_back2{
-    transform: rotateY(180deg);
-} 
-
-
-
-
-
-
-/* =============================================ballon animae================================================== */
-.img1_animae {
-    position:absolute;
-    width: 5%;
-    background-color: transparent;
     position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    z-index:300;
-  }
-  
-  @keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px;}
-  }
-  
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    padding:25px 25px 0 25px;
+}
+.correctAns1{
+    position:absolute;
+    bottom:20px;
+    right:20%;
+    background-color: red;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
+.wrongAns1{
+    position:absolute;
+    bottom:20px;
+    left:20%;
+    padding:10px 20px;
+    background-color: pink;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    color:black;
+}
+
+.game_bgcontainer2{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6);
+}
+.question_board2{
+    width:50%;
+    height: 40%;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    padding:25px 25px 0 25px;
+}
+
+.correctAns1_2{
+    position:absolute;
+    bottom:20px;
+    right:4%;
+    background-color: red;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.wrongAns1_2{
+    position:absolute;
+    bottom:20px;
+    right:52%;
+    background-color: red;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+.game_bgcontainer3{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6);
+}
+.question_board3{
+    width:50%;
+    height: 40%;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    padding:25px 25px 0 25px;
+}
+
+.correctAns1_3{
+    position:absolute;
+    bottom:20px;
+    right:60%;
+    background-color: red;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.wrongAns1_3{
+    position:absolute;
+    bottom:20px;
+    right:20%;
+    background-color: red;
+    padding:10px 20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
